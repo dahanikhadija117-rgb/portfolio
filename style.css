@@ -1,0 +1,80 @@
+/* Styles généraux et couleurs de fond */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    /* Transition fluide pour le changement de couleur (JS) */
+    transition: background-color 0.4s ease; 
+}
+
+/* Style du bouton d'interaction */
+button {
+    padding: 12px 25px;
+    background-color: #1e3799;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+}
+
+/* Conteneur principal du portfolio */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 450px;
+}
+
+h1 { 
+    color: #1e3799; 
+}
+
+/* Section des compétences */
+.card { 
+    text-align: left; 
+    background: #f9f9f9; 
+    padding: 15px; 
+    border-left: 5px solid #1e3799; 
+    border-radius: 5px; 
+}
+
+/* Style du pied de page */
+.footer {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #999;
+}
+nav {
+    padding: 15px;
+    background-color: #f8f9fa;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid #1e3799;
+}
+
+nav a {
+    color: #1e3799;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3498db;
+}
