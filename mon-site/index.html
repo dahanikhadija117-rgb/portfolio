@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio Interactif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="index.html">Accueil</a> | 
+    <a href="portfolio.html">Portfolio</a> | 
+    <a href="contact.html">Contact</a>
+</nav>
+    <button id="btn-style" onclick="changerCouleur()">Changer le Style</button>
+
+    <div class="container">
+        <h1>Bienvenue sur mon site</h1>
+        <p class="description">Étudiante à la Faculté des Sciences Semlalia (FSSM). Passionnée par le développement web.</p>
+        
+        <div class="card">
+            <h2>Mes Compétences</h2>
+            <ul>
+                <li>Langage Python</li>
+                <li>Systèmes Linux</li>
+                <li>Bases de données SQL</li>
+                <li>Développement Web (HTML/CSS/JS)</li>
+            </ul>
+        </div>
+
+        <footer class="footer">
+            <p>© 2026 - Créé par moi-même</p>
+        </footer>
+    </div>
+
+    <script>
+        function changerCouleur() {
+            // Générer une couleur aléatoire
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            // Appliquer la couleur au fond de la page
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+
+</body>
+</html>
